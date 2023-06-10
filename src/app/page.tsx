@@ -22,7 +22,7 @@ export default function Home() {
             {p.title}
           </h3>
           <img
-           src={p.Image}
+           src={p.image}
            alt={p.title}
            />
            </>

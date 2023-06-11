@@ -8,7 +8,7 @@ export default async function handler(
   const client = await db.connect();
  
   try {
-    await client.sql`CREATE TABLE posts ( id Int, title varchar(255), image varchar(255) );`;
+    await client.sql`CREATE TABLE posts ( id int, title varchar(255), image varchar(255) );`;
     const Ids =['1','2','3']
     const names = ['Fiona', 'Lucy'];
     const image=['https://tse2.mm.bing.net/th?id=OIP.XohiXvZbVKg-_8OjrlGVHgHaIL&pid=Api&P=0&h=180','https://tse3.mm.bing.net/th?id=OIP.jdt8VNtyICulU4jtOgoakAHaG5&pid=Api&P=0&h=180']
